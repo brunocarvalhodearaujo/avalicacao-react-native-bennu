@@ -1,0 +1,19 @@
+stages:
+  - test
+  - build
+  - deploy
+
+publish into expo account:
+  stage: deploy
+  image: node:11.10.0-alpine
+  before_script:
+    - apk add --quiet --no-cache bash
+    - npm i -g expo-cli
+    - expo-cli login --username $EXPO_USERNAME --password $EXPO_PASSWORD
+    - npm ci
+  script:
+    - expo-cli publish
+  only:
+    - master
+    - tags
+
