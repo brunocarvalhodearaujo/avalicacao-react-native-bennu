@@ -17,7 +17,8 @@ import {
   TouchableRipple,
   Checkbox,
   FAB,
-  Caption as BaseCaption
+  Caption as BaseCaption,
+  Text
 } from 'react-native-paper'
 import styled from 'styled-components'
 

@@ -10,10 +10,10 @@ import { Login, ListTodos, CreateTodo, EditTodo, Settings } from './views'
 import { Navigation, Feedback } from './components'
 
 const Menu = createDrawerNavigator({
+  Settings: { screen: Settings },
   ListTodos: { screen: ListTodos },
   CreateTodo: { screen: CreateTodo },
-  EditTodo: { screen: EditTodo },
-  Settings: { screen: Settings }
+  EditTodo: { screen: EditTodo }
 }, { contentComponent: Navigation })
 
 const AppNav = createAppContainer(Menu)

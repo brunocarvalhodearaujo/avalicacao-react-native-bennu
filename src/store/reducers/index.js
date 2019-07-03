@@ -8,8 +8,10 @@ import { combineReducers } from 'redux'
 import feedback from './feedback'
 import user from './user'
 import todos from './todos'
+import tracking from './tracking'
 
 const reducers = combineReducers({
+  tracking,
   feedback,
   todos,
   user
