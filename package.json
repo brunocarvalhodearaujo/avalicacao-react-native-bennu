@@ -14,7 +14,7 @@
     "babel-preset-expo": "^5.1.1"
   },
   "dependencies": {
-    "expo": "^33.0.0",
+    "expo": "^46.0.14",
     "expo-facebook": "5.0.1",
     "firebase": "6.2.4",
     "lodash": "4.17.11",
